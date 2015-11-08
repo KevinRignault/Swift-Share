@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import Social
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +21,31 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    
+    @IBAction func btnFacebook(sender: AnyObject) {
+        //-- Check if the user has Facebook app and is log in
+        if SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook) {
+            
+            //-- Share to Facebook service
+            let shareToFacebook : SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
+            
+            //-- Show share view
+            self.presentViewController(shareToFacebook, animated: true, completion: nil)
+        }
+    }
+    
+    @IBAction func btnTwitter(sender: AnyObject) {
+        //-- Check if the user has Facebook app and is log in
+        if SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter) {
+        
+            //-- Share to twitter service
+            let shareToTwitter : SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+        
+            //-- Show share view
+            self.presentViewController(shareToTwitter, animated: true, completion: nil)
+        }
+    }
+    
 
 }
 

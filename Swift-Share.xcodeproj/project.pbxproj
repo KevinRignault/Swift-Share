@@ -192,6 +192,7 @@
 				TargetAttributes = {
 					F32647EC1BB0AB33003202D9 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = ZDR2UKF3L9;
 					};
 					F32648001BB0AB33003202D9 = {
 						CreatedOnToolsVersion = 7.0;
@@ -396,10 +397,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Swift-Share/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.krignault.Swift-Share";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -407,10 +411,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Swift-Share/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.krignault.Swift-Share";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -481,6 +488,7 @@
 				F32648171BB0AB33003202D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F32648181BB0AB33003202D9 /* Build configuration list for PBXNativeTarget "Swift-ShareTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +497,7 @@
 				F326481A1BB0AB33003202D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F326481B1BB0AB33003202D9 /* Build configuration list for PBXNativeTarget "Swift-ShareUITests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +506,7 @@
 				F326481D1BB0AB33003202D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
