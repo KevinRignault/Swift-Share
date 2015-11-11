@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    
+    //-- SHARE ON FACEBOOK
     @IBAction func btnFacebook(sender: AnyObject) {
         //-- Check if the user has Facebook app and is log in
         if SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook) {
@@ -34,6 +34,7 @@ class ViewController: UIViewController {
         }
     }
     
+    //-- SHARE ON TWITTER
     @IBAction func btnTwitter(sender: AnyObject) {
         //-- Check if the user has Facebook app and is log in
         if SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter) {
