@@ -36,7 +36,7 @@ class ViewController: UIViewController {
     
     //-- SHARE ON TWITTER
     @IBAction func btnTwitter(sender: AnyObject) {
-        //-- Check if the user has Facebook app and is log in
+        //-- Check if the user has Twitter app and is log in
         if SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter) {
         
             //-- Share to twitter service
